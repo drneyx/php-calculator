@@ -21,5 +21,10 @@ include 'includes/autoLoader.inc.php';
             <input type="number" name="num2" placeholder="Second Number">
             <button type="submit" name="submit">Calculate</button>
         </form>
+
+        <?php
+         $testObject = new Test();
+         $testObject->getUsersStmp("Daniel", "Nelson");
+        ?>
     </body>
 </html>
