@@ -9,7 +9,7 @@ include 'includes/autoLoader.inc.php';
         <title></title>
     </head>
     <body>
-        <form method="post" action="includes/calc.inc.php">
+        <form action="includes/calc.inc.php" method="post" >
             <p>My own Calculator</p>
             <input type="number" name="num1" placeholder="First Number">
             <select name="oper">
@@ -19,7 +19,7 @@ include 'includes/autoLoader.inc.php';
                 <option value="div">Division</option>
             </select>
             <input type="number" name="num2" placeholder="Second Number">
-            <button type="button" name="submit">Calculate</button>
+            <button type="submit" name="submit">Calculate</button>
         </form>
     </body>
 </html>
