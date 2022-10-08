@@ -11,4 +11,32 @@ class Calc {
         $this->num2 = $num2;
     }
     
+    public function calculator(){
+        switch ($this->operator){
+            case 'add':
+                $result = $this->num1 + $this->num2;
+                return $result;
+                break;
+
+            case 'sub':
+                $result = $this->num1 - $this->num2;
+                return $result;
+                break;
+
+            case 'div':
+                $result = $this->num1 / $this->num2;
+                return $result;
+                break;
+
+            case 'mul':
+                $result = $this->num1 * $this->num2;
+                return $result;
+                break;
+
+            default:
+                echo " Error";
+                break;
+
+        }
+    }
 }
