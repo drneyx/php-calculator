@@ -58,3 +58,13 @@ class Cash {
         
     }
 }
+
+class BuyProduct {
+    public function pay(Cash $paymentType){
+        $paymentType->payNow();
+    }
+}
+
+$paymentType = new Cash();
+$buyProduct = new BuyProduct();
+$buyProduct->pay($paymentType);
