@@ -24,7 +24,7 @@ include 'includes/autoLoader.inc.php';
 
         <?php
          $testObject = new Test();
-         $testObject->getUsersStmp("Daniel", "Nelson");
+         $testObject->setUsersStmp("Daniel", "Nelson");
         ?>
     </body>
 </html>

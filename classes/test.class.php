@@ -21,4 +21,12 @@ class Test extends Dbh{
             echo $name['first'] . '<br>';
         }
     }
+
+    public function setUsersStmp($first, $last){
+        $sql = "INSERT INTO users(first, last) VALUES(?, ?)";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$first, $last]);
+
+       
+    }
 }
