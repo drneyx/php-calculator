@@ -41,26 +41,36 @@ class Calc {
     }
 }
 
-class Paypal {
+
+interface PaymentInterface {
+    public function payNow();
+}
+
+class Paypal implements PaymentInterface{
+    public function loginFirst(){}
+    public function payNow(){}
+    
+    public function paymentProcess(){
+        $this->loginFirst();
+        $this->payNow();
+
+    }
+}
+
+class Visa  implements PaymentInterface{
     public function payNow(){
         
     }
 }
 
-class Visa {
-    public function payNow(){
-        
-    }
-}
-
-class Cash {
+class Cash implements PaymentInterface{
     public function payNow(){
         
     }
 }
 
 class BuyProduct {
-    public function pay(Cash $paymentType){
+    public function pay(PaymentInterface $paymentType){
         $paymentType->payNow();
     }
 }
