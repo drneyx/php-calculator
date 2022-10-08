@@ -23,8 +23,8 @@ include 'includes/autoLoader.inc.php';
         </form>
 
         <?php
-         $testObject = new Test();
-         $testObject->setUsersStmp("Daniel", "Nelson");
+         $usersObject = new UsersView;
+         $usersObject->showUsers("sdsd");
         ?>
     </body>
 </html>
