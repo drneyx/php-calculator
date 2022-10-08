@@ -16,7 +16,6 @@ class Users extends Dbh{
         $sql = "INSERT INTO users(first, last, addres, number) VALUES(?, ?, ?, ?)";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$first, $last, $addres, $number]);
-        return $result;
     }
      
 }

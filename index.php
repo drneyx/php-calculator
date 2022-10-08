@@ -25,6 +25,11 @@ include 'includes/autoLoader.inc.php';
         <?php
          $usersObject = new UsersView;
          $usersObject->showUsers("sdsd");
+
+         $usersObject = new UsersContr;
+         $usersObject->createUser("Maina", "Lawrance", "Mbezi", "+233434");
+
+         
         ?>
     </body>
 </html>
