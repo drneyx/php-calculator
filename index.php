@@ -21,5 +21,15 @@ include 'includes/autoLoader.inc.php';
             <input type="number" name="num2" placeholder="Second Number">
             <button type="submit" name="submit">Calculate</button>
         </form>
+
+        <?php
+         $usersObject = new UsersView;
+         $usersObject->showUsers("sdsd");
+
+         $usersObject = new UsersContr;
+         $usersObject->createUser("Maina", "Lawrance", "Mbezi", "+233434");
+
+         
+        ?>
     </body>
 </html>
